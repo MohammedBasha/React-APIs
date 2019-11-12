@@ -26,3 +26,17 @@
   from { transform: rotate(0deg); }
   to { transform: rotate(360deg); }
 }
+
+.App .row {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.App .row .s4:last-child {
+  margin-left: 0;
+}
+
+.App .row .s4 p {
+  height: 135px;
+  overflow: hidden;
+}
