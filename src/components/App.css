@@ -32,11 +32,22 @@
   flex-wrap: wrap;
 }
 
-.App .row .s4:last-child {
+.App .row .s4 {
   margin-left: 0;
 }
 
-.App .row .s4 p {
+.App .s4 p {
   height: 135px;
+  overflow: hidden;
+}
+
+.App .s4 .card-image {
+  height: 240px;
+  overflow: hidden;
+}
+
+.App .s4 .card-action a {
+  display: block;
+  height: 66px;
   overflow: hidden;
 }
