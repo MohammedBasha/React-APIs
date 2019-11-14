@@ -27,27 +27,21 @@
   to { transform: rotate(360deg); }
 }
 
-.App .row {
-  display: flex;
-  flex-wrap: wrap;
-}
-
 .App .row .s4 {
   margin-left: 0;
 }
 
-.App .s4 p {
-  height: 135px;
+.App .card-content {
+  height: 246px;
   overflow: hidden;
 }
 
 .App .s4 .card-image {
-  height: 240px;
+  height: 156px;
   overflow: hidden;
 }
 
-.App .s4 .card-action a {
-  display: block;
-  height: 66px;
+.App .s4 .card-action {
+  height: 121px;
   overflow: hidden;
 }

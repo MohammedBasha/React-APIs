@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import News from './News/News';
+import SideNews from './News/SideNews';
 import './App.css';
 
 class App extends Component {
@@ -13,20 +14,35 @@ class App extends Component {
       news2: {
         type: 'top-headlines',
         query: 'country=us&category=business'
+      },
+      news3: {
+        type: 'everything',
+        query: 'domains=wsj.com'
       }
     };
   }
 
   render() {
     return (
-      <div className="App">
-        <header className="App-header">
-          <h1 className="App-title">News Feed</h1>
-        </header>
-        <h5>News in {this.state.news1.type}</h5>
-        <News news={this.state.news1} />
-        <h5>News in {this.state.news2.type}</h5>
-        <News news={this.state.news2} />
+      <div className="App container-fluid">
+        <div className="navbar-fixed">
+          <nav className="indigo lighten-4">
+            <div className="nav-wrapper indigo lighten-4">
+              <h5>News Feed</h5>
+            </div>
+          </nav>
+        </div>
+        <div className="row">
+          <div className="col s8">
+            <h5>News in {this.state.news1.type}</h5>
+            <News news={this.state.news1} />
+            <h5>News in {this.state.news2.type}</h5>
+            <News news={this.state.news2} />
+          </div>
+          <div className="col s4">
+            <SideNews news={this.state.news3} />
+          </div>
+        </div>
       </div>
     );
   }
