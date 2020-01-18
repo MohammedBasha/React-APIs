@@ -9,15 +9,15 @@ class App extends Component {
     this.state = {
       news1: {
         type: 'everything',
-        query: 'q=apple&from=2019-11-11&to=2019-11-11&sortBy=popularity'
+        query: 'q=apple&from=2020-01-17&to=2020-01-17&sortBy=popularity'
       },
       news2: {
         type: 'top-headlines',
-        query: 'country=us&category=business'
+        query: 'sources=bbc-news'
       },
       news3: {
         type: 'everything',
-        query: 'domains=wsj.com'
+        query: 'q=bitcoin'
       }
     };
   }
